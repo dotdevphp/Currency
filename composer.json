@@ -1,5 +1,5 @@
 {
-    "name": "sylius/currency",
+    "name": "dotdev/currency",
     "type": "library",
     "description": "Currency handling for PHP applications.",
     "keywords": [
@@ -26,9 +26,9 @@
     ],
     "require": {
         "php": "^7.3",
-        "sylius/resource": "1.6.*",
-        "symfony/intl": "^4.4",
-        "zendframework/zend-stdlib": "^3.2"
+        "sylius/resource": "~1.6",
+        "symfony/intl": "^4.4 || ^5.*",
+        "laminas/laminas-stdlib": "^3.2"
     },
     "require-dev": {
         "phpspec/phpspec": "^7.0"
