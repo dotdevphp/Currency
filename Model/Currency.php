@@ -46,7 +46,11 @@ class Currency implements CurrencyInterface
             return null;
         }
 
-        return Currencies::getName($code);
+        try {
+            return Currencies::getName($code);
+        } catch (\Exception $e) {
+            return $code;
+        }
     }
 
     public function getCode(): ?string
